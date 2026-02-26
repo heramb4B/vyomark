@@ -1,0 +1,320 @@
+/* =========================================
+   Vyomark Digital Solutions — main.css
+   ========================================= */
+
+/* ── Google Fonts ── */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+/* ── Base ── */
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+/* ── Glass Card ── */
+.glass-card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(30, 58, 138, 0.1);
+}
+
+/* ── Gradients ── */
+.blue-gradient {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+}
+
+.yellow-gradient {
+  background: linear-gradient(135deg, #facc15 0%, #eab308 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ── Scroll Reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Float Animation ── */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ── Navbar ── */
+.nav-link {
+  position: relative;
+}
+
+.nav-link.active-nav {
+  color: #2563eb;
+}
+
+.nav-link.active-nav::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #2563eb;
+  border-radius: 9999px;
+}
+
+/* ── Mobile Menu ── */
+#mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+#mobile-menu.open {
+  max-height: 500px;
+}
+
+.mobile-nav-link.active-mobile {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+/* ── Back to Top Button ── */
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 40;
+  width: 3rem;
+  height: 3rem;
+  background: #facc15;
+  color: #172554;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
+  transform: translateY(80px);
+  opacity: 0;
+  cursor: pointer;
+  border: none;
+}
+
+#back-to-top.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#back-to-top:hover {
+  background: #eab308;
+  transform: translateY(-4px);
+}
+
+/* ── Contact Form States ── */
+.contact-form-section {
+  display: block;
+}
+
+.contact-success {
+  display: none;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+/* ── Select Styling ── */
+select::-ms-expand {
+  display: none;
+}
+
+/* ── Group Hover Utility ── */
+.group:hover .group-hover-show {
+  opacity: 1;
+}
+
+/* ── Line Clamp ── */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ========================================
+   Portfolio Cards
+   ======================================== */
+.portfolio-card {
+  position: relative;
+  display: block;
+  height: 520px;
+  border-radius: 2.5rem;
+  overflow: hidden;
+  text-decoration: none;
+  border: 1px solid #eff6ff;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 40px 80px rgba(30, 58, 138, 0.18);
+}
+
+.portfolio-card__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s ease;
+}
+
+.portfolio-card:hover .portfolio-card__img {
+  transform: scale(1.08);
+}
+
+.portfolio-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(15, 23, 42, 0.9) 0%,
+    rgba(15, 23, 42, 0.55) 50%,
+    rgba(15, 23, 42, 0.2) 100%
+  );
+  transition: opacity 0.4s ease;
+}
+
+.portfolio-card:hover .portfolio-card__overlay {
+  opacity: 0.85;
+}
+
+.portfolio-card__pill {
+  position: absolute;
+  top: 1.75rem;
+  left: 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.portfolio-card__body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2.5rem;
+  color: #ffffff;
+}
+
+.portfolio-card__icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: #facc15;
+  color: #172554;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover .portfolio-card__icon {
+  transform: scale(1.1) rotate(-4deg);
+}
+
+.portfolio-card__title {
+  font-size: 2.25rem;
+  font-weight: 900;
+  margin-bottom: 0.75rem;
+  line-height: 1.15;
+}
+
+.portfolio-card__desc {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+  max-width: 22rem;
+}
+
+.portfolio-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #facc15;
+  color: #172554;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 9999px;
+  transition:
+    background 0.2s,
+    gap 0.2s;
+}
+
+.portfolio-card:hover .portfolio-card__cta {
+  background: #eab308;
+  gap: 0.9rem;
+}
+
+.portfolio-card__cta svg {
+  transition: transform 0.2s;
+}
+
+.portfolio-card:hover .portfolio-card__cta svg {
+  transform: translateX(3px);
+}
+
+.portfolio-card__corner {
+  position: absolute;
+  top: 1.75rem;
+  right: 1.75rem;
+  width: 3rem;
+  height: 3rem;
+  border-top: 3px solid rgba(250, 204, 21, 0.6);
+  border-right: 3px solid rgba(250, 204, 21, 0.6);
+  border-radius: 0 0.5rem 0 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.portfolio-card:hover .portfolio-card__corner {
+  opacity: 1;
+}

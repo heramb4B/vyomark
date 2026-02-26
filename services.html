@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | Vyomark Digital Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="bg-yellow-50 text-blue-950 overflow-x-hidden">
+    <!-- ==================== NAVBAR ==================== -->
+    <nav
+      id="navbar"
+      class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-5"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center">
+          <a
+            href="index.html"
+            class="flex-shrink-0 cursor-pointer flex items-center gap-2"
+          >
+            <div
+              class="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center shadow-lg shadow-blue-200"
+            >
+              <span class="text-white font-bold text-2xl">V</span>
+            </div>
+            <span class="font-bold text-xl text-blue-900"
+              >Vyomark <span class="text-blue-600">Digital</span></span
+            >
+          </a>
+          <div class="hidden md:flex items-center space-x-6">
+            <div
+              class="flex items-center space-x-6 pr-6 border-r border-blue-100"
+            >
+              <a
+                href="index.html"
+                class="nav-link text-sm font-semibold transition-all hover:text-blue-600 py-1 text-blue-900"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="nav-link text-sm font-semibold transition-all hover:text-blue-600 py-1 text-blue-900"
+                >About Us</a
+              >
+              <a
+                href="services.html"
+                class="nav-link text-sm font-semibold transition-all hover:text-blue-600 py-1 text-blue-900"
+                >Services</a
+              >
+              <a
+                href="testimonials.html"
+                class="nav-link text-sm font-semibold transition-all hover:text-blue-600 py-1 text-blue-900"
+                >Testimonials</a
+              >
+              <a
+                href="creations.html"
+                class="nav-link text-sm font-semibold transition-all hover:text-blue-600 py-1 text-blue-900"
+                >Our Creations</a
+              >
+              <a
+                href="contact.html"
+                class="nav-link text-sm font-semibold transition-all hover:text-blue-600 py-1 text-blue-900"
+                >Contact Us</a
+              >
+            </div>
+            <div class="flex items-center space-x-5 pl-2">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                aria-label="Facebook"
+                class="text-blue-900 hover:text-yellow-500 transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"
+                  /></svg
+              ></a>
+              <a
+                href="https://www.instagram.com/vyomarkpune/"
+                target="_blank"
+                aria-label="Instagram"
+                class="text-blue-900 hover:text-yellow-500 transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  /></svg
+              ></a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                aria-label="LinkedIn"
+                class="text-blue-900 hover:text-yellow-500 transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+          <button
+            id="hamburger-btn"
+            class="md:hidden p-2 rounded-lg text-blue-900 hover:bg-blue-50 transition-colors"
+            aria-label="Toggle menu"
+          >
+            <svg
+              id="icon-menu"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+            <svg
+              id="icon-close"
+              style="display: none"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden">
+          <div class="pt-4 pb-2 space-y-1">
+            <a
+              href="index.html"
+              onclick="closeMobile()"
+              class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-semibold text-blue-900 hover:bg-blue-50 transition-colors"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              onclick="closeMobile()"
+              class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-semibold text-blue-900 hover:bg-blue-50 transition-colors"
+              >About Us</a
+            >
+            <a
+              href="services.html"
+              onclick="closeMobile()"
+              class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-semibold text-blue-900 hover:bg-blue-50 transition-colors"
+              >Services</a
+            >
+            <a
+              href="testimonials.html"
+              onclick="closeMobile()"
+              class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-semibold text-blue-900 hover:bg-blue-50 transition-colors"
+              >Testimonials</a
+            >
+            <a
+              href="creations.html"
+              onclick="closeMobile()"
+              class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-semibold text-blue-900 hover:bg-blue-50 transition-colors"
+              >Our Creations</a
+            >
+            <a
+              href="contact.html"
+              onclick="closeMobile()"
+              class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-semibold text-blue-900 hover:bg-blue-50 transition-colors"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ==================== END NAVBAR ==================== -->
+
+    <main class="pt-32 pb-20 bg-blue-50/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal text-center mb-20">
+          <span
+            class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4 block"
+            >Our Expertise</span
+          >
+          <h1 class="text-4xl md:text-6xl font-extrabold text-blue-950 mb-6">
+            Innovative Media &amp;<br />Technology Solutions
+          </h1>
+          <div class="h-1.5 w-24 bg-yellow-400 mx-auto mb-8 rounded-full"></div>
+          <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+            We offer a comprehensive suite of digital services designed to take
+            your business to the next level.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Social Media Management -->
+          <div
+            class="reveal glass-card p-10 rounded-[32px] h-full flex flex-col group hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-100"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl bg-yellow-400 text-blue-950 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-yellow-100/50"
+            >
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="18" cy="5" r="3" />
+                <circle cx="6" cy="12" r="3" />
+                <circle cx="18" cy="19" r="3" />
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-blue-950 mb-4">
+              Social Media Management
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-8 flex-grow">
+              Elevate your brand presence across all social channels with
+              strategic content and engagement.
+            </p>
+            <button
+              onclick="window.open('smm.html')"
+              class="flex items-center gap-2 text-blue-600 font-bold hover:gap-4 transition-all"
+            >
+              Learn More <span class="text-xl">→</span>
+            </button>
+          </div>
+
+          <!-- Social Media Marketing -->
+          <div
+            class="reveal glass-card p-10 rounded-[32px] h-full flex flex-col group hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-100"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl bg-yellow-400 text-blue-950 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-yellow-100/50"
+            >
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                <polyline points="17 6 23 6 23 12" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-blue-950 mb-4">
+              Social Media Marketing
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-8 flex-grow">
+              Targeted ad campaigns designed to convert followers into loyal
+              customers.
+            </p>
+            <button
+              onclick="window.open('smmr.html')"
+              class="flex items-center gap-2 text-blue-600 font-bold hover:gap-4 transition-all"
+            >
+              Learn More <span class="text-xl">→</span>
+            </button>
+          </div>
+
+          <!-- Performance Marketing -->
+          <div
+            class="reveal glass-card p-10 rounded-[32px] h-full flex flex-col group hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-100"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl bg-yellow-400 text-blue-950 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-yellow-100/50"
+            >
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-blue-950 mb-4">
+              Performance Marketing
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-8 flex-grow">
+              Data-driven marketing strategies focused on high ROI and
+              measurable growth.
+            </p>
+            <button
+              onclick="window.open('performance.html')"
+              class="flex items-center gap-2 text-blue-600 font-bold hover:gap-4 transition-all"
+            >
+              Learn More <span class="text-xl">→</span>
+            </button>
+          </div>
+
+          <!-- Website Development -->
+          <div
+            class="reveal glass-card p-10 rounded-[32px] h-full flex flex-col group hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-100"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl bg-yellow-400 text-blue-950 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-yellow-100/50"
+            >
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-blue-950 mb-4">
+              Website Development
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-8 flex-grow">
+              Bespoke, responsive websites that combine aesthetic appeal with
+              high functionality.
+            </p>
+            <button
+              onclick="window.open('webdev.html')"
+              class="flex items-center gap-2 text-blue-600 font-bold hover:gap-4 transition-all"
+            >
+              Learn More <span class="text-xl">→</span>
+            </button>
+          </div>
+
+          <!-- Web Application Development -->
+          <div
+            class="reveal glass-card p-10 rounded-[32px] h-full flex flex-col group hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-100"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl bg-yellow-400 text-blue-950 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-yellow-100/50"
+            >
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-blue-950 mb-4">
+              Web Application Development
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-8 flex-grow">
+              Complex, scalable web solutions tailored to your business
+              operations.
+            </p>
+            <button
+              onclick="window.open('webapp.html')"
+              class="flex items-center gap-2 text-blue-600 font-bold hover:gap-4 transition-all"
+            >
+              Learn More <span class="text-xl">→</span>
+            </button>
+          </div>
+
+          <!-- Mobile Application Development -->
+          <div
+            class="reveal glass-card p-10 rounded-[32px] h-full flex flex-col group hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-100"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl bg-yellow-400 text-blue-950 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-yellow-100/50"
+            >
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                <line x1="12" y1="18" x2="12.01" y2="18" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-blue-950 mb-4">
+              Mobile Application Development
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-8 flex-grow">
+              Native and cross-platform mobile apps providing seamless user
+              experiences.
+            </p>
+            <button
+              onclick="window.open('mobileapp.html')"
+              class="flex items-center gap-2 text-blue-600 font-bold hover:gap-4 transition-all"
+            >
+              Learn More <span class="text-xl">→</span>
+            </button>
+          </div>
+
+          <!-- Videography -->
+          <div
+            class="reveal glass-card p-10 rounded-[32px] h-full flex flex-col group hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-100"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl bg-yellow-400 text-blue-950 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-yellow-100/50"
+            >
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polygon points="23 7 16 12 23 17 23 7" />
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-blue-950 mb-4">Videography</h3>
+            <p class="text-gray-600 leading-relaxed mb-8 flex-grow">
+              High-quality cinematic video production for brands and
+              commercials.
+            </p>
+            <button
+              onclick="window.open('videography.html')"
+              class="flex items-center gap-2 text-blue-600 font-bold hover:gap-4 transition-all"
+            >
+              Learn More <span class="text-xl">→</span>
+            </button>
+          </div>
+
+          <!-- Photography -->
+          <div
+            class="reveal glass-card p-10 rounded-[32px] h-full flex flex-col group hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-100"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl bg-yellow-400 text-blue-950 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-yellow-100/50"
+            >
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+                />
+                <circle cx="12" cy="13" r="4" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-blue-950 mb-4">Photography</h3>
+            <p class="text-gray-600 leading-relaxed mb-8 flex-grow">
+              Professional product, lifestyle, and corporate photography
+              services.
+            </p>
+            <button
+              onclick="window.open('photography.html')"
+              class="flex items-center gap-2 text-blue-600 font-bold hover:gap-4 transition-all"
+            >
+              Learn More <span class="text-xl">→</span>
+            </button>
+          </div>
+
+          <!-- Photo/Video Studio -->
+          <div
+            class="reveal glass-card p-10 rounded-[32px] h-full flex flex-col group hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-yellow-100"
+          >
+            <div
+              class="w-16 h-16 rounded-2xl bg-yellow-400 text-blue-950 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-yellow-100/50"
+            >
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"
+                />
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+                <line x1="12" y1="19" x2="12" y2="23" />
+                <line x1="8" y1="23" x2="16" y2="23" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-blue-950 mb-4">
+              Photo/Video Studio
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-8 flex-grow">
+              Fully-equipped studio space for high-end content creation.
+            </p>
+            <button
+              onclick="window.open('studio.html')"
+              class="flex items-center gap-2 text-blue-600 font-bold hover:gap-4 transition-all"
+            >
+              Learn More <span class="text-xl">→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-blue-950 text-white pt-16 pb-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12"
+        >
+          <div class="space-y-6">
+            <div class="flex items-center gap-2">
+              <div
+                class="w-8 h-8 bg-yellow-400 rounded flex items-center justify-center"
+              >
+                <span class="text-white font-bold">V</span>
+              </div>
+              <span class="font-bold text-xl">Vyomark Digital</span>
+            </div>
+            <p class="text-blue-200 text-sm leading-relaxed">
+              Transforming businesses through digital innovation and creative
+              excellence. Your partner in technology and media solutions.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                class="w-8 h-8 rounded-full bg-blue-900 flex items-center justify-center hover:bg-yellow-400 hover:text-blue-950 transition-all duration-300"
+                ><svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"
+                  /></svg
+              ></a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                class="w-8 h-8 rounded-full bg-blue-900 flex items-center justify-center hover:bg-yellow-400 hover:text-blue-950 transition-all duration-300"
+                ><svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  /></svg
+              ></a>
+              <a
+                href="https://www.instagram.com/vyomarkpune/"
+                target="_blank"
+                class="w-8 h-8 rounded-full bg-blue-900 flex items-center justify-center hover:bg-yellow-400 hover:text-blue-950 transition-all duration-300"
+                ><svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <h3 class="text-lg font-bold border-b border-blue-800 pb-2">
+              Quick Links
+            </h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-blue-200 hover:text-white transition-colors text-sm"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-blue-200 hover:text-white transition-colors text-sm"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="text-blue-200 hover:text-white transition-colors text-sm"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="testimonials.html"
+                  class="text-blue-200 hover:text-white transition-colors text-sm"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="creations.html"
+                  class="text-blue-200 hover:text-white transition-colors text-sm"
+                  >Our Creations</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-blue-200 hover:text-white transition-colors text-sm"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-6">
+            <h3 class="text-lg font-bold border-b border-blue-800 pb-2">
+              Contact Details
+            </h3>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <svg
+                  class="text-blue-400 mt-1 flex-shrink-0"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" /></svg
+                ><span class="text-blue-200 text-sm">info@vyomark.com</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg
+                  class="text-blue-400 mt-1 flex-shrink-0"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.92 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                  /></svg
+                ><span class="text-blue-200 text-sm">+91 97672 60539</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg
+                  class="text-blue-400 mt-1 flex-shrink-0"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" /></svg
+                ><span class="text-blue-200 text-sm"
+                  >Appa Balwant Chowk, Pune</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-6">
+            <h3 class="text-lg font-bold border-b border-blue-800 pb-2">
+              Stay Updated
+            </h3>
+            <p class="text-blue-200 text-sm">
+              Subscribe to get the latest insights and news from our team.
+            </p>
+            <div class="flex">
+              <input
+                type="email"
+                id="newsletter-email"
+                placeholder="Email address"
+                class="bg-blue-900 text-white border-none rounded-l-md px-4 py-2 w-full focus:ring-1 focus:ring-blue-400 outline-none"
+              />
+              <button
+                onclick="subscribeNewsletter()"
+                class="bg-yellow-400 hover:bg-blue-500 transition-colors px-4 py-2 rounded-r-md"
+              >
+                Join
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="pt-8 border-t border-blue-900 text-center">
+          <p class="text-blue-300 text-sm">
+            © 2026 Vyomark Digital Solutions Pvt Ltd. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      id="back-to-top"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+      >
+        <line x1="12" y1="19" x2="12" y2="5" />
+        <polyline points="5 12 12 5 19 12" />
+      </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
